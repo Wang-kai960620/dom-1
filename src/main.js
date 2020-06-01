@@ -30,7 +30,7 @@ dom.off(test, "click", fn);
 const test2 = dom.find(`#test2`)[0];
 console.log(dom.find(`.red`, test2)[0]);
 
-const s2 = dom.find("#s2")[0];
+const s2 = dom.find("#s2")[0]; //[0]返回的是一个数组，我们使用第一个
 
 console.log(dom.siblings(s2));
 console.log(dom.next(s2));
